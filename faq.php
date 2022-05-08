@@ -11,6 +11,7 @@
             font: 1em sans-serif;
         }
     </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 <nav>

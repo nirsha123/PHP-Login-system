@@ -1,3 +1,4 @@
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <h2>Sign Up</h2>
 <form action="signupp.php" method="post">
 Name: <input type="text" name="name">

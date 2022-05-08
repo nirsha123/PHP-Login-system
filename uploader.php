@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <body>
 
 <form action="upload.php" method="post" enctype="multipart/form-data">
