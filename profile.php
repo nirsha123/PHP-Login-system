@@ -27,8 +27,8 @@ session_start();
     </nav>
     <p>
         <?php
-                if (isset($_SESSION["usernamee"])) {
-                    echo "<p>Hello ". $_SESSION["usernamee"] ."</p>";
+                if (isset($_SESSION["username"])) {
+                    echo "<p>Hello ". $_SESSION["username"] ."</p>";
                     echo "<a href='logout.php'>logout</a> ";
                 }
                 else {

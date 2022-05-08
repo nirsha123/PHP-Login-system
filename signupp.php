@@ -10,8 +10,14 @@ if (isset($_POST["submit"])) {
     require_once 'db.php';
     require_once 'functions.php';
 
+    if (uidExists($conn, $username, $email) !== false) {
+        header("location: ../signup.php?error=usernametaken");
+        exit();
+    }
+
     createUser($conn, $name, $email, $username, $password);
 }
 else {
-    echo "<script>window.location.href='signup.php';</script>";
+    header("location: ../signup.php?error=error");
+    exit();
 }

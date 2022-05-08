@@ -12,8 +12,8 @@
 <?php
 session_start();
 
-if (isset($_SESSION["usernamee"])) {
-    echo "<p>Hello ". $_SESSION["usernamee"] ."</p>";
+if (isset($_SESSION["username"])) {
+    echo "<p>Hello ". $_SESSION["username"] ."</p>";
     echo "<a href='logout.php'>logout</a> ";
     echo "<a href='profile.php'>profile</a>";
 }
@@ -30,7 +30,7 @@ else {
         <a href="profile.php">Profile</a>
 </nav>
 <h2>Support System</h2>
-    <form action="sentsupport.php"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+    <form action="sentsupport.php" method="post">
         Name: <input type="text" name="name" placeholder="name..">
         Email address: <input type="email" name="email" placeholder="email...">
         your problem: <input type="text" name="subject" placeholder="subject...">

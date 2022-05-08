@@ -27,8 +27,8 @@ session_start();
     <h2>PHP Login System & Forgotten Password System by Email with CRUD &#129305;</h2>
     <h2>Click Below to check this out! &#128071;</h2>
 <?php
-    if (isset($_SESSION["usernamee"])) {
-        echo "<p>Hello ". $_SESSION["usernamee"] ."</p>";
+    if (isset($_SESSION["username"])) {
+        echo "<p>Hello ". $_SESSION["username"] ."</p>";
         echo "<a href='logout.php'>logout</a> ";
         echo "<a href='profile.php'>profile</a>";
     } else {
